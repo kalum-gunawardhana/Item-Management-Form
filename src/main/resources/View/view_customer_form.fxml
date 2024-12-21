@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller.ViewCustomerForm">
    <children>
-      <TableView fx:id="tblItem" layoutX="32.0" layoutY="77.0" prefHeight="200.0" prefWidth="536.0">
+      <TableView fx:id="tblItem" layoutX="32.0" layoutY="122.0" prefHeight="200.0" prefWidth="536.0">
         <columns>
           <TableColumn fx:id="colID" prefWidth="62.39996337890625" text="Item ID" />
           <TableColumn fx:id="colName" prefWidth="88.00006103515625" text="Item Name" />
@@ -16,8 +19,23 @@
             <TableColumn fx:id="colPrice" prefWidth="104.800048828125" text="Item Price" />
         </columns>
       </TableView>
-      <Button layoutX="229.0" layoutY="306.0" mnemonicParsing="false" onAction="#btnLoadOnAction" text="LOAD" />
-      <Button layoutX="32.0" layoutY="345.0" mnemonicParsing="false" onAction="#btnBackOnAction" text="BACK" />
-      <Button layoutX="317.0" layoutY="306.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" text="DELETE" />
+      <Button layoutX="228.0" layoutY="345.0" mnemonicParsing="false" onAction="#btnLoadOnAction" style="-fx-background-color: #eed202;" text="LOAD">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="32.0" layoutY="345.0" mnemonicParsing="false" onAction="#btnBackOnAction" style="-fx-background-color: #00b7eb;" text="BACK">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="316.0" layoutY="345.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" style="-fx-background-color: #ff4500;" text="DELETE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eed202" height="71.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
+      <Label layoutX="216.0" layoutY="18.0" text="VIEW ITEM FORM">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
