@@ -39,4 +39,17 @@ public class ViewCustomerForm {
 
         tblItem.setItems(itemObservableList);
     }
+
+    public void btnDeleteOnAction(ActionEvent actionEvent) {
+        Item selectedItem = (Item) tblItem.getSelectionModel().getSelectedItem();
+
+        if (selectedItem != null) {
+
+            Connection.getInstance().getItemList().remove(selectedItem);
+            tblItem.getItems().remove(selectedItem);
+        }else{
+            System.out.println("No selected item");
+            loadTable();
+        }
+    }
 }

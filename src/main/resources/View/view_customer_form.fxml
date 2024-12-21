@@ -5,7 +5,6 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller.ViewCustomerForm">
    <children>
       <TableView fx:id="tblItem" layoutX="32.0" layoutY="77.0" prefHeight="200.0" prefWidth="536.0">
@@ -17,7 +16,8 @@
             <TableColumn fx:id="colPrice" prefWidth="104.800048828125" text="Item Price" />
         </columns>
       </TableView>
-      <Button layoutX="276.0" layoutY="319.0" mnemonicParsing="false" onAction="#btnLoadOnAction" text="LOAD" />
+      <Button layoutX="229.0" layoutY="306.0" mnemonicParsing="false" onAction="#btnLoadOnAction" text="LOAD" />
       <Button layoutX="32.0" layoutY="345.0" mnemonicParsing="false" onAction="#btnBackOnAction" text="BACK" />
+      <Button layoutX="317.0" layoutY="306.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" text="DELETE" />
    </children>
 </AnchorPane>
