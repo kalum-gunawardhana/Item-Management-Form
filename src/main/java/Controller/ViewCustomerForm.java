@@ -1,4 +1,4 @@
-package org.example.Controller;
+package Controller;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -6,8 +6,8 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import org.example.DBConnection.Connection;
-import org.example.model.Item;
+import DBConnection.Connection;
+import model.Item;
 
 public class ViewCustomerForm {
     public TableColumn colID;

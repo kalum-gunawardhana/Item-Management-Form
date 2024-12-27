@@ -1,11 +1,11 @@
-package org.example.Controller;
+package Controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import org.example.DBConnection.Connection;
-import org.example.model.Item;
+import DBConnection.Connection;
+import model.Item;
 
 import java.net.URL;
 import java.util.ResourceBundle;

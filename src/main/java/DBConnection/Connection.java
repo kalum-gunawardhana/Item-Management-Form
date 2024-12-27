@@ -1,6 +1,6 @@
-package org.example.DBConnection;
+package DBConnection;
 
-import org.example.model.Item;
+import model.Item;
 
 import java.util.ArrayList;
 
